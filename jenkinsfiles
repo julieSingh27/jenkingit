@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                bat 'echo %DATE%'
+            }
+        }
+         stage('run') {
+            steps {
+                echo 'command'
+            }
+        }
+         stage('program') {
+            steps {
+                echo 'code'
+            }
+        }
+        
+    }
+}
